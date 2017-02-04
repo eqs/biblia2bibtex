@@ -6,15 +6,32 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>biblia2bibtex</title>
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
         <!-- my css -->
-        <link rel="stylesheet" href="design.css" type="text/css">
+        <link rel="stylesheet" href="/static/design.css" type="text/css">
     </head>
     <body>
-        <form action = "/bibtex.bib" method = "POST" 
-            enctype = "multipart/form-data">
-            <input type = "file" name = "file" />
-            <input type = "submit"/>
-        </form>
+        <div class="site-box">
+            <div class="title">
+                biblia2bibtex
+            </div>
+            <div class="about">
+                Application for converting books.csv to bibtex.
+            </div>
+            <form action = "/bibtex.bib" method = "POST" 
+                enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>
+            <footer class="small">
+                <div class="container">
+                    <div class="col-xs-12 text-center copyright">
+                        &copy; 2017 eqs
+                    </div>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="/static/js/bootstrap.min.js"></script>
+        </div>
     </body>
 </html>
