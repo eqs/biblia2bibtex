@@ -16,13 +16,16 @@
                 biblia2bibtex
             </div>
             <div class="about">
-                Application for converting books.csv to bibtex.
+                読書管理アプリ「ビブリア」で生成した books.csv を
+                bibtex形式に変換するアプリです
             </div>
-            <form action = "/bibtex.bib" method = "POST" 
-                enctype = "multipart/form-data">
-                <input type = "file" name = "file" />
-                <input type = "submit"/>
-            </form>
+            <div class="form">
+                <form action = "/bibtex.bib" method = "POST" 
+                    enctype = "multipart/form-data">
+                    <input type = "file" name = "file" />
+                    <input type = "submit"/>
+                </form>
+            </div>
             <footer class="small">
                 <div class="container">
                     <div class="col-xs-12 text-center copyright">
