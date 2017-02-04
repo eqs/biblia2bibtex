@@ -12,9 +12,6 @@ import datetime
 import flask 
 import pandas as pd
 
-# setting for pandas
-pd.set_option('line_width', 100)
-
 # create flask app
 app = flask.Flask(__name__)
 
